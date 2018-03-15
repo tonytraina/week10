@@ -1,6 +1,10 @@
 Item
   content: text
 
+User
+  email: text
+  password: text
+
 
 # Example:
 #
