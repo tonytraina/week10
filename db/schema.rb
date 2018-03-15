@@ -18,4 +18,11 @@ ActiveRecord::Schema.define(version: 0) do
     t.datetime "updated_at"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.text "email"
+    t.text "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
