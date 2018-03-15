@@ -1,0 +1,17 @@
+<h1>My To Do List</h1>
+
+<table class="table table-hover">
+  <% for i in Item.all %>
+    <tr>
+      <td><%= i.content %><td>
+    </tr>
+  <% end %>
+</table>
+
+<%= form_tag "/items" do %>
+
+  <p>New Item:
+    <input autofocus type="text" name="content">
+  <p>
+
+<% end %>
